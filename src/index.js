@@ -16,9 +16,9 @@ async function run() {
     let executeFlag = await needExecute(date);
     let formattedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
     let results = [`- XYB - ${formattedDate}`];
-    console.log(`- XYB - ${formattedDate}`)
-    results.push("脚本今天休息，望周知。")
     if (!executeFlag) {
+        console.log(`- XYB - ${formattedDate}`)
+        results.push("脚本今天休息，望周知。")
         await sendMsg(results.join("\n"), config);
         return
     }
