@@ -1,5 +1,9 @@
 # XYB 自动签到签退
 
+### 接口加密更新，代码失效，目前可用请查看： https://github.com/A1Panda/XybSign-NEXT
+
+
+
 支持的功能：
 
 - 随机延迟签到签退
